@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Time Logger",
+  "name": "browser activity logging app",
   "description": "A simple time logger for Chrome",
   "version": "1.0.0",
   "action": { "default_popup": "index.html" },
