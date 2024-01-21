@@ -1,11 +1,12 @@
 {
   "name": "vite-template-react",
   "version": "1.4.0",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start": "vite --port 3000 --open",
-    "dev": "vite --port 3000 --open",
-    "build": "vite build",
+    "start": "vite --port 3033 --open",
+    "dev": "vite --port 3033 --open",
+    "build": "tsc && vite build",
+    "lint": "pnpm dlx @biomejs/biome check --apply .",
     "serve": "vite preview --open",
     "test": "vitest"
   },
@@ -14,10 +15,16 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.5.2",
+    "@crxjs/vite-plugin": "2.0.0-beta.23",
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
+    "@types/chrome": "^0.0.258",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "jsdom": "^23.0.1",
+    "typescript": "^5.3.3",
     "vite": "^5.0.8",
     "vitest": "^1.1.1"
   }
